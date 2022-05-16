@@ -1,0 +1,24 @@
+{
+  "name": "nodeJSTrainee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": " nodemon --require dotenv/config ./src/index.ts",
+    "build": "tsc -p .",
+    "start": "node --require dotenv/config ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
