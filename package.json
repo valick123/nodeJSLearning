@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": " nodemon --require dotenv/config ./src/index.ts",
+    "dev": "tsc -w | npm run start",
     "build": "tsc -p .",
-    "start": "node --require dotenv/config ./dist/index.js"
+    "start": "nodemon --require dotenv/config ./dist/index.js"
   },
   "keywords": [],
   "author": "",
