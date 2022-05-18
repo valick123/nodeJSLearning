@@ -14,5 +14,8 @@ const app: Application = Application.createApplication();
 app.addRouter(router);
 app.listen(
     Number(process.env.PORT),
-    (): void => console.log(`Server is running on port: ${process.env.PORT}...`)
+    (): void => {
+        console.log(`Server is running on port: ${process.env.PORT}...`)
+    }
 )
+console.log("here");
