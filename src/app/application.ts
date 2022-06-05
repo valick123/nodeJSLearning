@@ -22,7 +22,6 @@ export class Application {
         })
     }
     public addRouter(router: AppRouter): void {
-        console.log(router)
         const endPoints: IEndPoint = router.getAllEndPoints();
         Object.keys(endPoints)
             .forEach((endPointPath: string) => {

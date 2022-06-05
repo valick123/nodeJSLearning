@@ -1,6 +1,6 @@
 import { IncomingMessage, ServerResponse } from "http";
-import { AppRouter } from "./app/app.router.js";
-import { Application } from "./app/application.js";
+import { AppRouter } from "./app/app.router";
+import { Application } from "./app/application";
 
 console.clear();
 const router: AppRouter = AppRouter.createAppRouter()
@@ -18,4 +18,3 @@ app.listen(
         console.log(`Server is running on port: ${process.env.PORT}...`)
     }
 )
-console.log("here");

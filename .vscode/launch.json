@@ -15,7 +15,8 @@
             "runtimeArgs": ["-r", "dotenv/config"],
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
-            ]
+            ],
+            "preLaunchTask": "npm: build"
         }
     ]
 }
